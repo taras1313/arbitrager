@@ -1,0 +1,113 @@
+main {
+    background: url(image_main/lamp.png) no-repeat;
+}
+
+.container {
+    display: grid;
+    grid-template: '. about' 60% 'how how' 30% 'risk risk' 30% / 2fr 3fr;
+    grid-gap: 20px;
+}
+
+@media (max-width: 700px) {
+    div.container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 'about' 'how' 'risk';
+    }
+    div.container h2 {
+        text-align: left;
+        margin-left: 70px
+    }
+    .risk img {
+        margin: auto;
+    }
+    
+}
+
+.about_service {
+    grid-area: about;
+
+}
+
+.how_does_it_work {
+    grid-area: how;
+}
+
+.risk {
+    grid-area: risk;
+}
+
+.about_service h2 {
+    text-align: right;
+    margin-right: 100px;
+    font-size: 48px;
+}
+
+
+.how_does_it_work h2 {
+    text-align: center;
+    font-size: 48px;
+}
+
+h2+img {
+    float: right;
+    height: 165px;
+    width: 189px;
+    margin: 20px 110px 20px 30px;
+}
+
+.how_does_it_work p,
+.risk p,
+.risk li {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 23px;
+}
+
+.risk h2 {
+    margin-left: 70px;
+    font-size: 48px;
+    color: #9f1010;
+}
+
+.about_service p {
+    font-size: 23px;
+    margin: 23px 50px;
+    background-color: #2E0C0F;
+    box-shadow: 31px 19px 3px 5px #281815;
+    padding: 30px;
+}
+
+.how_does_it_work p{
+    background-color: #08151F;
+    box-shadow: -30px 34px 2px 5px #222224;
+    padding: 30px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'btc_usdt' 'eth_usdt' 'strat_usdt';
+    justify-items: center;
+}
+
+td {
+    width: 150px;
+    height: 30px;
+}
+
+.btc_usdt {
+    grid-area: btc_usdt;
+}
+
+.eth_usdt {
+    grid-area: eth_usdt;
+}
+
+.strat_usdt {
+    grid-area: strat_usdt;
+}
+
+#start_working {
+    background-color: #2C2D2F;
+    text-align: center;
+}
