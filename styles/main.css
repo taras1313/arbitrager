@@ -8,10 +8,18 @@ main {
     grid-gap: 20px;
 }
 
+div.container {
+    background-image: url(../image_main/lamp.png);
+    background-repeat: no-repeat;
+    
+}
+
 @media (max-width: 700px) {
     div.container {
         grid-template-columns: 1fr;
         grid-template-areas: 'about' 'how' 'risk';
+        
+        
     }
     div.container h2 {
         text-align: left;
@@ -19,6 +27,12 @@ main {
     }
     .risk img {
         margin: auto;
+    }
+    div.container p {
+        margin-right: 0;
+        margin-left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     
 }

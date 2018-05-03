@@ -2,7 +2,10 @@ nav ul {
     display: flex;
     justify-content: space-around;
     background-color: #2C2D2F;
-    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    flex-wrap: wrap;
+
 }
 
 nav ul li {
@@ -16,5 +19,23 @@ nav ul li a {
     color: #d6d6d6;
     font-weight: bold;
     font-size: 26px;
+    
 }
+
+@media (max-width: 700px) {
+    nav ul li {
+        min-width: 70%;
+        text-align: center;    
+        margin-bottom: 3px;     
+        vertical-align: middle;
+        margin-top: 3px;
+    }
+    nav ul li:nth-child(odd) {
+        background-color: #69696d;
+        width: 100%;
+
+}
+    
+}
+    
 
