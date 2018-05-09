@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/nav_style.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300' rel='stylesheet' type='text/css'>
 
     <title>Arbitrager - Швидке відстеження</title>
@@ -59,7 +60,7 @@
                 <h2 id="start_working">Починаєм?</h2>
                 <div class="calculator">
                     <section class="btc_usdt">
-                        <h3>BTC-USDT <img src="img_for_index/btc.png" alt="біткоін"><img src="img_for_index/vectors.png" alt="vector"><img src="img_for_index/usdt.png" alt="usdt"></h3>
+                        <h3>BTC-USDT <img src="image_main/btc.png" alt="біткоін"><img src="image_main/vectors.svg" alt="vector"><img src="image_main/tether.png" alt="usdt"></h3>
                         <table border>
                             <tr>
                                 <th>Біржа</th>
@@ -78,7 +79,7 @@
                         </table>
                     </section>
                     <section class="eth_usdt">
-                        <h3>ETH-USDT <img src="img_for_index/eth.png" alt="ефіріум"><img src="img_for_index/vectors.png" alt="vector"><img src="img_for_index/usdt.png" alt="usdt"></h3>
+                        <h3>ETH-USDT <img src="image_main/eth.png" alt="ефіріум"><img src="image_main/vectors.svg" alt="vector"><img src="image_main/tether.png" alt="usdt"></h3>
                         <table border>
                             <tr>
                                 <th>Біржа</th>
@@ -97,7 +98,7 @@
                         </table>
                     </section>
                     <section class="strat_usdt">
-                        <h3>STRAT-USDT <img src="img_for_index/strat.png" alt="стратіс"><img src="img_for_index/vectors.png" alt="vector"><img src="img_for_index/usdt.png" alt="usdt"></h3>
+                        <h3>STRAT-USDT <img src="image_main/stratis.png" alt="стратіс"><img src="image_main/vectors.svg" alt="vector"><img src="image_main/tether.png" alt="usdt"></h3>
                         <table border>
                             <tr>
                                 <th>Біржа</th>
@@ -117,26 +118,33 @@
                     </section>
                 </div>
             </article>
-            <section>
-                <h2>Побажання для покращення сервісу</h2>
-                <form method="post" action="https://formspree.io/jakimuk.taras.semenowuch@gmail.com">
-                    <input type="text" placeholder="Ім'я" name="user_name" required>
-                    <br>
-                    <input type="email" placeholder="Пошта" name="user_email" required>
-                    <br>
-                    <textarea name="commit" required placeholder="Коментар"></textarea>
-                    <br>
-                    <label>
-                    <input type="checkbox" name="subscribe" checked value="yes"> Підписатись на наші новини?
-                </label>
-                    <br>
-                    <input type="submit" value="Відправити">
-                </form>
-                <img src="img_for_index/instagram.jpg" alt="інстаграм">
-                <img src="img_for_index/facebook.png" alt="фейсбук">
-                <img src="img_for_index/youtube.png" alt="ютуб">
-                <img src="img_for_index/message.png" alt="повідомлення">
-            </section>
+            <footer class="footer">
+                <section>
+                    <h2>Маєте побажання для покращення сервісу?</h2>
+                    <form method="POST" action="https://formspree.io/jakimuk.taras.semenowuch@gmail.com">
+                        <img class="message" src="image_main/message.png">
+                        <label>
+                	<input type="text" name="user_name" placeholder="Ваше ім'я" 
+                	pattern="[аa-їzАA-ЯZ]" required>
+            	</label>
+                        <label>
+                	<input type="email" name="user_email" placeholder="Ваша поштова скринька" required>
+            	</label>
+                        <label for="message">
+            	</label>
+                        <textarea id="message" name="message" rows="5" cols="30" placeholder="Я хочу, аби ви додали такі валюти..." required></textarea>
+                        <div>
+                            <input type="submit" value="Відправити">
+                        </div>
+                    </form>
+                </section>
+                <div class="media">
+                    <p>Стежте за нами тут:</p>
+                    <img src="image_main/instagram.jpg" alt="instagram">
+                    <img src="image_main/facebook.png" alt="facebook">
+                    <img src="image_main/youtube.png" alt="youtube">
+                </div>
+            </footer>
         </main>
     </div>
 </body>

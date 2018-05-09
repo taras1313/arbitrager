@@ -1,0 +1,93 @@
+footer {
+	background: #fff;
+}
+
+footer section {
+	background: #E7E8E8;
+	text-align: right;
+}
+
+footer h2 {
+	text-align: center;
+	padding: 20px 30px;
+	color: black;
+}
+
+.footer section form {
+	margin-left: 50px;
+}
+
+
+footer form label input {
+	display: block;
+	height: 25px;
+	width: 400px;
+	margin: 10px auto;
+}
+
+footer section form textarea {
+	display: block;
+	width: 400px;
+	margin: 5px auto;
+}
+
+footer section div {
+	max-width: 236px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer section div input {
+	border: 0;
+	border-radius: 5px;
+	margin: 10px 0 10px 100px;
+	width: 130px;
+	height: 30px;
+	font-size: 1.2em;
+	background: #0bc61b;
+	color: white;
+}
+
+footer section div input:hover {
+	background: #31af3c;
+}
+
+footer .media {
+	text-align: center;
+	padding: 10px 0 10px 0;
+	background: #E7E8E8;
+}
+
+footer .media:hover {
+	background-color: #e2a5a5;
+}
+
+footer .media p {
+	color: #000;
+	margin: 0;
+}
+
+footer .media img {
+	display: inline-block;
+	margin: 5px 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+	.footer section form,
+	footer section div input {
+		margin: 0 auto;
+	}
+
+	footer .media:hover {
+		background-color: #fff;
+	}
+}
+
+.message {
+	width: 200px;
+	height: 200px;
+}
