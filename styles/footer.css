@@ -57,6 +57,8 @@ footer .media {
 	text-align: center;
 	padding: 10px 0 10px 0;
 	background: #E7E8E8;
+	padding-left: 40px;
+	font-size: 20px;
 }
 
 footer .media:hover {
@@ -66,6 +68,7 @@ footer .media:hover {
 footer .media p {
 	color: #000;
 	margin: 0;
+	padding-top: 15px;
 }
 
 footer .media img {
@@ -76,10 +79,10 @@ footer .media img {
 	border-radius: 12px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
 	.footer section form,
-	footer section div input {
-		margin: 0 auto;
+	footer section div input, #submiter {
+		margin: auto;
 	}
 
 	footer .media:hover {
@@ -87,7 +90,20 @@ footer .media img {
 	}
 }
 
-.message {
-	width: 200px;
+#message {
+	width: 500px;
 	height: 200px;
+	margin-right: 279px;
+}
+
+.footer input {
+	margin-right: 275px;
+	width: 500px;
+	height: 35px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+#submiter {
+	margin-left: 442px;
+	margin-top: 14px;
 }
