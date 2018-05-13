@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link href='https://fonts.googleapis.com/css?family=Oswald:700,400,300' rel='stylesheet' type='text/css'>
-
+    <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
     <title>Arbitrager - Швидке відстеження</title>
 </head>
 
@@ -22,8 +24,9 @@
         <header>
             Arbitrager- швидке відстеження
         </header>
+        <hr>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a id="#navbar_color" class="navbar-brand" href="#">ARbitrager</a>
+            <a id="#navbar_color" class="navbar-brand" href="#">ARbitrager ™</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -36,35 +39,32 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="#btc_usdt">BTC-USDT</a>
                             <a class="dropdown-item" href="#eth_usdt">ETH-USDT</a>
-                            <a class="dropdown-item" href="#strat_usdt">STRAT-USDT</a>
+                            <a class="dropdown-item" href="#bch_usdt">BCH-USDT</a>
+                            <a class="dropdown-item" href="#ltc_usdt">LTC-USDT</a>
+
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about_service">Про сервіс</a>
+                        <a class="nav-link" href="#about_service"><b>/</b>Про сервіс<b>/</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#how_does_it_work">Як це працює?</a>
+                        <a class="nav-link" href="#how_does_it_work">Як це працює?<b>/</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#risks">Ризики</a>
+                        <a class="nav-link" href="#risks">Ризики<b>/</b></a>
                     </li>
                 </ul>
             </div>
         </nav>
-        <!--<nav>-->
-        <!--    <ul>-->
-        <!--        <li><a href="#start_working">Почати роботу</a></li>-->
-        <!--        <li><a href="#about_service">Про сервіс</a></li>-->
-        <!--        <li><a href="#how_does_it_work">Як це працює</a></li>-->
-        <!--        <li><a href="#risks">Застереження</a></li>-->
-        <!--    </ul>-->
-        <!--</nav>-->
+        <hr>
         <main>
             <div class="container">
+               <div class="mr_trader1"><img src="image_main/mr_trader1.png"></img></div>
+               <div class="mr_trader2"><img src="image_main/mr_trader2.png"></img></div>
                 <article class="about_service">
                     <h2 id="about_service"> Про сервіс </h2>
                     <p>Сервіс створений для трейдерів криптовалютними активами, які займаються арбітражними транзакціями. Ринок криптовалют молодий і все ще досить малоліквідний, що зумовлює відчутні різниці в ціні на різних торгівельних платформах. Цей
-                        сервіс допоможе вам швидко реагувати на потенційно прибуткові розбіжності між біржами. На даний момент ми співпрацюємо з Poloniex та Hitbtc, а до списку валют входять: Bitcoin, Ethereum та Stratis </p>
+                        сервіс допоможе вам швидко реагувати на потенційно прибуткові розбіжності між біржами. На даний момент ми співпрацюємо з Poloniex та Hitbtc, а до списку валют входять: Bitcoin, Ethereum, Bitcoin Cash i Litecoin </p>
                 </article>
                 <article class="how_does_it_work">
                     <h2 id="how_does_it_work"> Як це працює? </h2>
@@ -100,14 +100,17 @@
                             </tr>
                             <tr>
                                 <td>Poloniex</td>
-                                <td>(ціна через апі)</td>
-                                <td rowspan="2">(різниця через джс)</td>
+                                <td class="poloniex_btc"></td>
+                                <td rowspan="2" class="difference1"></td>
                             </tr>
                             <tr>
                                 <td>Hitbtc</td>
-                                <td>(ціна через апі)</td>
+                                <td class="hitbtc_btc"></td>
                             </tr>
                         </table>
+                        <button class="refresh_price_1" title="Якщо ціна не змінилась, то зміни на біржі незначущі">Оновити ціну</button>
+                        <button class="calculate1">Обрахувати різницю</button>
+
                     </section>
                     <section id="eth_usdt" class="eth_usdt">
                         <h3>ETH-USDT <img src="image_main/eth.png" alt="ефіріум"><img src="image_main/vectors.svg" alt="vector"><img src="image_main/tether.png" alt="usdt"></h3>
@@ -119,17 +122,18 @@
                             </tr>
                             <tr>
                                 <td>Poloniex</td>
-                                <td>(ціна через апі)</td>
+                                <td class="poloniex_eth"></td>
                                 <td rowspan="2">(різниця через джс)</td>
                             </tr>
                             <tr>
                                 <td>Hitbtc</td>
-                                <td>(ціна через апі)</td>
+                                <td class="hitbtc_eth"></td>
                             </tr>
                         </table>
+                        <button class="refresh_price_2">Оновити ціну</button>
                     </section>
-                    <section id="strat_usdt" class="strat_usdt">
-                        <h3>STRAT-USDT <img src="image_main/stratis.png" alt="стратіс"><img src="image_main/vectors.svg" alt="vector"><img src="image_main/tether.png" alt="usdt"></h3>
+                    <section id="bch_usdt" class="strat_usdt">
+                        <h3>BCH-USDT <img src="image_main/bch.png" alt="біткоін кеш"><img src="image_main/vectors.svg" alt="vector"><img src="image_main/tether.png" alt="usdt"></h3>
                         <table border class="table_size">
                             <tr>
                                 <th>Біржа</th>
@@ -138,19 +142,41 @@
                             </tr>
                             <tr>
                                 <td>Poloniex</td>
-                                <td>(ціна через апі)</td>
+                                <td class="poloniex_bch"></td>
                                 <td rowspan="2">(різниця через джс)</td>
                             </tr>
                             <tr>
                                 <td>Hitbtc</td>
-                                <td>(ціна через апі)</td>
+                                <td class="hitbtc_bch"></td>
                             </tr>
                         </table>
+                        <button class="refresh_price_3">Оновити ціну</button>
+                    </section>
+                                        <section id="ltc_usdt" class="ltc_usdt">
+                        <h3>LTC-USDT <img src="image_main/ltc.png" alt="лайткоін"><img src="image_main/vectors.svg" alt="vector"><img src="image_main/tether.png" alt="usdt"></h3>
+                        <table border class="table_size">
+                            <tr>
+                                <th>Біржа</th>
+                                <th>Ціна</th>
+                                <th>різниця</th>
+                            </tr>
+                            <tr>
+                                <td>Poloniex</td>
+                                <td class="poloniex_ltc"></td>
+                                <td rowspan="2">(різниця через джс)</td>
+                            </tr>
+                            <tr>
+                                <td>Hitbtc</td>
+                                <td class="hitbtc_ltc"></td>
+                            </tr>
+                        </table>
+                        <button class="refresh_price_4">Оновити ціну</button>
                     </section>
                 </div>
             </article>
             <footer class="footer">
-                <section>
+                <div class="image_holder"><img src="image_main/contact_us.ico" alt="контактуйте нас"></div>
+                <section class="footer_main">
                     <h2>Маєте побажання для покращення сервісу?</h2>
                     <form method="POST" action="https://formspree.io/jakimuk.taras.semenowuch@gmail.com">
                         <label>
@@ -182,7 +208,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-
+    <script src="js/index.js"></script>
 </body>
 
 </html>

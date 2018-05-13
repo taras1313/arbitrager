@@ -51,16 +51,11 @@ header {
 .about_service {
     grid-area: about;
     background-color: #1b1b1b;
-    margin-top: 25px;
-    /*margin-left: 10px;*/
 
 }
 
 .how_does_it_work {
     grid-area: how;
-    background-color: #1b1b1b;
-    margin-top: 25px;
-    
 }
 
 .risk {
@@ -69,21 +64,16 @@ header {
 
 .about_service h2 {
     text-align: center;
-    background-color: gray;
-    /*padding-right: 80px;*/
+    /*margin-top: 12px;*/
     font-size: 48px;
-    margin-bottom: 0;
-    background-color: #00ff3747;
 }
 
 
 .how_does_it_work h2 {
 
-    margin-bottom: 0;
-    text-align: center;    
-    background-color: gray;
+    margin-bottom: 23px;
+    text-align: center;
     font-size: 48px;
-    background-color: #ab4c4c;
 }
 
 h2+img {
@@ -118,22 +108,19 @@ h2+img {
 
 .about_service p {
     font-size: 23px;
-    margin: 0;
+    margin: 0 23px;
     /*background-color: #1b1b1b;*/
     /*opacity: 0.85;*/
     /*box-shadow: 31px 19px 3px 5px #222224;*/
-    padding: 15px 21px 15px 21px;
-    text-align: center;
+    padding: 30px;
 }
 
 .how_does_it_work p {
     background-color: #1b1b1b;
-    /*box-shadow: -30px 34px 2px 5px #222224;*/
-    padding: 15px 21px 15px 21px;
-    /*opacity: 0.85;*/
+    box-shadow: -30px 34px 2px 5px #222224;
+    padding: 30px;
+    opacity: 0.85;
     font-size: 23px;
-    margin-bottom: 0;
-    text-align: center;
 
 
 }
@@ -152,13 +139,13 @@ td {
 }
 
 .about_service p:hover{
-/*font-size: 23.5px;*/
+font-size: 23.5px;
 background-color: #132d2f;
 }
 
 .how_does_it_work p:hover {
-    /*font-size: 23.5px;*/
-    background-color: #4c3636;
+    font-size: 23.5px;
+    background-color: #2b0202;
 }
 .btc_usdt {
     grid-area: btc_usdt;
