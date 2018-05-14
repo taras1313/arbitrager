@@ -2,22 +2,22 @@
     display: grid;
     grid-template: 'trader1 about about' 'how how trader2' 'risk risk risk';
     grid-gap: 20px;
-    
+
 }
 
 @media (max-width: 895px) {
     .container {
         display: grid;
-    grid-template: 'about about' 'how how' 'risk risk';
-    
+        grid-template: 'about about' 'how how' 'risk risk';
+
     }
-    mr_trader1,mr_trader2 {
+    mr_trader1,
+    mr_trader2 {
         display: none;
     }
 }
 
 div.container {
-    /*background-image: url(../image_main/lamp_btc.jpg);*/
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -34,15 +34,17 @@ header {
     font-size: 0;
 }
 
-.mr_trader1 img, .mr_trader2 img {
+.mr_trader1 img,
+.mr_trader2 img {
     width: 270px;
 }
 
 .mr_trader1 {
     grid-area: trader1;
     align-self: center;
-    
+
 }
+
 .mr_trader2 {
     grid-area: trader2;
     align-self: center;
@@ -52,7 +54,6 @@ header {
     grid-area: about;
     background-color: #1b1b1b;
     margin-top: 25px;
-    /*margin-left: 10px;*/
 
 }
 
@@ -60,7 +61,7 @@ header {
     grid-area: how;
     background-color: #1b1b1b;
     margin-top: 25px;
-    
+
 }
 
 .risk {
@@ -70,7 +71,6 @@ header {
 .about_service h2 {
     text-align: center;
     background-color: gray;
-    /*padding-right: 80px;*/
     font-size: 48px;
     margin-bottom: 0;
     background-color: #00ff3747;
@@ -80,7 +80,7 @@ header {
 .how_does_it_work h2 {
 
     margin-bottom: 0;
-    text-align: center;    
+    text-align: center;
     background-color: gray;
     font-size: 48px;
     background-color: #ab4c4c;
@@ -92,6 +92,7 @@ h2+img {
     width: 189px;
     margin: 20px 110px 20px 30px;
 }
+
 .risk p,
 .risk li {
     margin-left: 50px;
@@ -119,18 +120,13 @@ h2+img {
 .about_service p {
     font-size: 23px;
     margin: 0;
-    /*background-color: #1b1b1b;*/
-    /*opacity: 0.85;*/
-    /*box-shadow: 31px 19px 3px 5px #222224;*/
     padding: 15px 21px 15px 21px;
     text-align: center;
 }
 
 .how_does_it_work p {
     background-color: #1b1b1b;
-    /*box-shadow: -30px 34px 2px 5px #222224;*/
     padding: 15px 21px 15px 21px;
-    /*opacity: 0.85;*/
     font-size: 23px;
     margin-bottom: 0;
     text-align: center;
@@ -151,15 +147,18 @@ td {
     height: 30px;
 }
 
-.about_service p:hover{
-/*font-size: 23.5px;*/
-background-color: #132d2f;
+.about_service p:hover {
+    background-color: #132d2f;
+    transition-duration: 0.7s;
+    transform: scale(1.05, 1.05);
 }
 
 .how_does_it_work p:hover {
-    /*font-size: 23.5px;*/
-    background-color: #4c3636;
+    background-color: #4c3636B;
+    transition-duration: 0.7s;
+    transform: scale(1.05, 1.05);
 }
+
 .btc_usdt {
     grid-area: btc_usdt;
 }
@@ -199,7 +198,7 @@ background-color: #132d2f;
         grid-template-areas: 'about about' 'how how' 'risk risk';
         grid-gap: 0;
         background-image: none;
-        
+
 
     }
     div.container h2 {
@@ -223,8 +222,9 @@ background-color: #132d2f;
         text-align: center;
 
     }
-    
-    .mr_trader1 img, .mr_trader2 img {
+
+    .mr_trader1 img,
+    .mr_trader2 img {
         width: 0;
     }
 
@@ -267,7 +267,10 @@ table.table_size {
     }
 }
 
-.refresh_price_1, .refresh_price_2, .refresh_price_3, .refresh_price_4 {
+.refresh_price_1,
+.refresh_price_2,
+.refresh_price_3,
+.refresh_price_4 {
     display: block;
     margin: auto;
     margin-top: 15px;
@@ -276,8 +279,11 @@ table.table_size {
     cursor: pointer;
 }
 
-.refresh_price_1:hover, .refresh_price_2:hover, .refresh_price_3:hover, .refresh_price_4:hover {
-    background-color: #c0c5ce;    
+.refresh_price_1:hover,
+.refresh_price_2:hover,
+.refresh_price_3:hover,
+.refresh_price_4:hover {
+    background-color: #c0c5ce;
 }
 
 .navbar-toggler {
