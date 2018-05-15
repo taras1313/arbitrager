@@ -296,16 +296,6 @@ table.table_size {
     cursor: pointer;
 }
 
-.refresh_price_1:hover,
-.refresh_price_2:hover,
-.refresh_price_3:hover,
-.refresh_price_4:hover,
-.calculate1:hover,
-.calculate2:hover,
-.calculate3:hover,
-.calculate4:hover {
-    background-color: #c0c5ce;
-}
 
 .navbar-toggler {
     background-color: #d6d6d6;
@@ -318,4 +308,8 @@ table.table_size {
     display: block;
     margin: 10px auto;
     width: 212px;
+}
+
+td.difference1, td.difference2, td.difference3, td.difference4 {
+    vertical-align: middle;
 }
