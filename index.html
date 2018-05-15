@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+SC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+    
     <title>Arbitrager - Швидке відстеження</title>
 </head>
 
@@ -26,32 +27,32 @@
         </header>
         <hr>
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-            <a id="#navbar_color" class="navbar-brand" href="#">ARbitrager ™</a>
+            <a id="#navbar_color" class="navbar-brand smooth" href="#">ARbitrager ™</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="smooth nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Швидкий старт
         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#btc_usdt">BTC-USDT</a>
-                            <a class="dropdown-item" href="#eth_usdt">ETH-USDT</a>
-                            <a class="dropdown-item" href="#bch_usdt">BCH-USDT</a>
-                            <a class="dropdown-item" href="#ltc_usdt">LTC-USDT</a>
+                            <a class="dropdown-item smooth" href="#btc_usdt">BTC-USDT</a>
+                            <a class="dropdown-item smooth" href="#eth_usdt">ETH-USDT</a>
+                            <a class="dropdown-item smooth" href="#bch_usdt">BCH-USDT</a>
+                            <a class="dropdown-item smooth" href="#ltc_usdt">LTC-USDT</a>
 
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about_service"><b>/</b>Про сервіс<b>/</b></a>
+                        <a class="nav-link smooth" href="#about_service"><b>/</b>Про сервіс<b>/</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#how_does_it_work">Як це працює?<b>/</b></a>
+                        <a class="nav-link smooth" href="#how_does_it_work">Як це працює?<b>/</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#risks">Ризики<b>/</b></a>
+                        <a class="nav-link smooth" href="#risks">Ризики<b>/</b></a>
                     </li>
                 </ul>
             </div>
@@ -97,8 +98,8 @@
                         <table border class="table_size">
                             <tr>
                                 <th>Біржа</th>
-                                <th>Ціна</th>
-                                <th>різниця</th>
+                                <th>Ціна в $</th>
+                                <th>різниця в $</th>
                             </tr>
                             <tr>
                                 <td>Poloniex</td>
@@ -119,13 +120,13 @@
                         <table border class="table_size">
                             <tr>
                                 <th>Біржа</th>
-                                <th>Ціна</th>
-                                <th>різниця</th>
+                                <th>Ціна в $</th>
+                                <th>різниця в $</th>
                             </tr>
                             <tr>
                                 <td>Poloniex</td>
                                 <td class="poloniex_eth"></td>
-                                <td rowspan="2">(різниця через джс)</td>
+                                <td rowspan="2" class="difference2"></td>
                             </tr>
                             <tr>
                                 <td>Hitbtc</td>
@@ -133,19 +134,20 @@
                             </tr>
                         </table>
                         <button class="refresh_price_2">Оновити ціну</button>
+                        <button class="calculate2">Обрахувати різницю</button>
                     </section>
                     <section id="bch_usdt" class="strat_usdt">
                         <h3>BCH-USDT <img src="image_main/bch.png" alt="біткоін кеш"><img src="image_main/vectors.svg" alt="vector"><img src="image_main/tether.png" alt="usdt"></h3>
                         <table border class="table_size">
                             <tr>
                                 <th>Біржа</th>
-                                <th>Ціна</th>
-                                <th>різниця</th>
+                                <th>Ціна в $</th>
+                                <th>різниця в $</th>
                             </tr>
                             <tr>
                                 <td>Poloniex</td>
                                 <td class="poloniex_bch"></td>
-                                <td rowspan="2">(різниця через джс)</td>
+                                <td rowspan="2" class="difference3"></td>
                             </tr>
                             <tr>
                                 <td>Hitbtc</td>
@@ -153,19 +155,20 @@
                             </tr>
                         </table>
                         <button class="refresh_price_3">Оновити ціну</button>
+                        <button class="calculate3">Обрахувати різницю</button>
                     </section>
                     <section id="ltc_usdt" class="ltc_usdt">
                         <h3>LTC-USDT <img src="image_main/ltc.png" alt="лайткоін"><img src="image_main/vectors.svg" alt="vector"><img src="image_main/tether.png" alt="usdt"></h3>
                         <table border class="table_size">
                             <tr>
                                 <th>Біржа</th>
-                                <th>Ціна</th>
-                                <th>різниця</th>
+                                <th>Ціна в $</th>
+                                <th>різниця в $</th>
                             </tr>
                             <tr>
                                 <td>Poloniex</td>
                                 <td class="poloniex_ltc"></td>
-                                <td rowspan="2">(різниця через джс)</td>
+                                <td rowspan="2" class="difference4"></td>
                             </tr>
                             <tr>
                                 <td>Hitbtc</td>
@@ -173,6 +176,7 @@
                             </tr>
                         </table>
                         <button class="refresh_price_4">Оновити ціну</button>
+                        <button class="calculate4">Обрахувати різницю</button>
                     </section>
                 </div>
             </article>

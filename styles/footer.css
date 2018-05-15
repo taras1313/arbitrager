@@ -80,6 +80,11 @@ footer .media img:hover {
 	transform: scale(1.2, 1.2);
 }
 
+footer .media img:not(:hover){
+    transition-duration: 0.7s;
+    transform: scale(1, 1);
+}
+
 @media (max-width: 800px) {
 	.footer section form,
 	footer section div input,

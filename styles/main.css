@@ -83,7 +83,7 @@ header {
     text-align: center;
     background-color: gray;
     font-size: 48px;
-    background-color: #ab4c4c;
+    background-color: #243d52;
 }
 
 h2+img {
@@ -107,6 +107,14 @@ h2+img {
     margin-bottom: 25px;
 }
 
+.risk:hover {
+        transition-duration: 0.7s;
+    transform: scale(1.05, 1.05);
+}
+.risk:not(:hover) {
+    transition-duration: 0.7s;
+    transform: scale(1, 1);
+}
 
 .risk h2 {
     margin: auto;
@@ -147,16 +155,24 @@ td {
     height: 30px;
 }
 
-.about_service p:hover {
-    background-color: #132d2f;
+.about_service:hover {
     transition-duration: 0.7s;
     transform: scale(1.05, 1.05);
 }
 
-.how_does_it_work p:hover {
-    background-color: #4c3636B;
+.how_does_it_work:hover {
     transition-duration: 0.7s;
     transform: scale(1.05, 1.05);
+}
+
+.how_does_it_work:not(:hover){
+    transition-duration: 0.7s;
+    transform: scale(1, 1);
+}
+    
+.about_service:not(:hover){
+    transition-duration: 0.7s;
+    transform: scale(1, 1);
 }
 
 .btc_usdt {
@@ -275,14 +291,16 @@ table.table_size {
     margin: auto;
     margin-top: 15px;
     margin-bottom: 7px;
-    width: 200px;
+    width: 212px;
     cursor: pointer;
 }
 
 .refresh_price_1:hover,
 .refresh_price_2:hover,
 .refresh_price_3:hover,
-.refresh_price_4:hover {
+.refresh_price_4:hover,
+.calculate1:hover, .calculate2:hover, .calculate3:hover, .calculate4:hover 
+{
     background-color: #c0c5ce;
 }
 
@@ -290,7 +308,8 @@ table.table_size {
     background-color: #d6d6d6;
 }
 
-.calculate1 {
+.calculate1, .calculate2, .calculate3, .calculate4 {
     display: block;
-    margin: auto;
+    margin: 10px auto;
+    width: 212px;
 }
